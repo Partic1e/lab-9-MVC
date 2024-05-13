@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Приложение</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+        #list {
+            list-style-type: none;
+            padding: 0;
+        }
+        #addSection {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="addSection">
+        <label>Добавьте продукт:</label>
+        <input type="text" id="new">
+        <button onclick="add()">Добавить</button>
+    </div>
+    <label>Список покупок:</label>
+    <ul id="list"></ul>
+    <script src="script.js"></script>
+</body>
+</html>
